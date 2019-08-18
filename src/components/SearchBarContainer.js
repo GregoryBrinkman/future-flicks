@@ -5,9 +5,6 @@ import SearchBar from './SearchBar';
 function SearchBarContainer(props) {
   const [results, setResults] = useState({});
 
-  console.log(results);
-  console.log(results);
-  console.log(results);
   return (
     <div className="SearchBarContainer">
       <SearchBar setResults={setResults} />

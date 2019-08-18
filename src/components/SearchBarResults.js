@@ -13,7 +13,7 @@ function SearchBarResults(props) {
   return (
     <div className="SearchBarResults">
       {props.results.Search.map((result, index) => {
-        return <SearchBarResultItem key={`result${index}`} addToWatchList={props.addToWatchList} result={result} />
+        return <SearchBarResultItem key={`result${index}`} result={result} addToWatchList={props.addToWatchList} />
       })}
     </div>
   );

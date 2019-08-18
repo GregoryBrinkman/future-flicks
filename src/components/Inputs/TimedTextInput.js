@@ -23,7 +23,7 @@ function TimedTextInput(props) {
   }
 
   return (
-    <Input name={props.name} change={timedFetch} loading={loading} />
+    <Input type="text" name={props.name} change={timedFetch} loading={loading} />
   );
 }
 

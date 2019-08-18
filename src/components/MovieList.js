@@ -5,9 +5,11 @@ function MovieList(props) {
   return (
     <div className="MovieList">
       <h3>Movies to watch</h3>
-      {props.movies.map((movie, index) => {
-        return <Movie key={`movie${index}`} removeFromWatchList={props.removeFromWatchList} movie={movie} />
-      })}
+      <div className="MovieListContainer">
+        {props.movies.map((movie, index) => {
+          return <Movie key={`movie${index}`}movie={movie} removeFromWatchList={props.removeFromWatchList} />
+        })}
+      </div>
     </div>
   );
 }
