@@ -1,10 +1,10 @@
 const KoaRouter = require('koa-router');
-const getVersions = require('./all');
+const search = require('./search');
 
 module.exports = function version() {
   const router = new KoaRouter();
 
-  router.get('/', getVersions);
+  router.get('/search', search);
 
   return router.routes();
 };

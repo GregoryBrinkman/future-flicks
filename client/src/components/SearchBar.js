@@ -9,15 +9,14 @@ function SearchBar(props) {
   }
 
   const searchMovieApi = (search) => {
-    const apiKey = "77ce29e1";
-    const apiUrl = "http://www.omdbapi.com"
-    const fetchString = `${apiUrl}/?s=${search}&apikey=${apiKey}`;
+    const fetchString = `http://localhost:3001/api/search?search=${search}`;
 
     fetch(fetchString)
       .then((response) => {
         return response.json();
       })
-      .then((results) => {
+      .then((json) => {
+        const { results } = json;
         props.setResults(results);
       });
   }
