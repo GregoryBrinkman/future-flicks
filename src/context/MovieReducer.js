@@ -64,9 +64,6 @@ const loadMovies = () => {
 
 
 export const MovieReducer = (state, action) => {
-  console.log(state, action)
-  console.log(state, action)
-  console.log(state, action)
   switch (action.type) {
     case ADD_MOVIE: 
       return addToWatchList(action.movie);
