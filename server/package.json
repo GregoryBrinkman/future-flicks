@@ -1,0 +1,27 @@
+{
+  "name": "future-flicks-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregoryBrinkman/future-flicks.git"
+  },
+  "author": "GregoryBrinkman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GregoryBrinkman/future-flicks/issues"
+  },
+  "homepage": "https://github.com/GregoryBrinkman/future-flicks#readme",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "http-errors": "^1.7.3",
+    "koa": "^2.8.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^7.4.0"
+  }
+}
